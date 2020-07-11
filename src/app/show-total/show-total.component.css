@@ -1,0 +1,50 @@
+.totalCases
+{   
+    width: 15% !important;
+    display: inline-block;
+    background-color:lightblue;
+    margin: 10px;
+}
+
+.totalDeceased
+{
+    width: 15% !important;
+    display: inline-block;
+    background-color: red;
+    margin: 10px;
+}
+
+.totalActive
+{
+    width: 15% !important;
+    display: inline-block;
+    background-color: yellow;
+    margin: 10px;
+}
+
+.totalRecovered
+{
+    width: 15% !important;
+    display: inline-block;
+    background-color: green;
+    margin: 10px;
+}
+
+.container
+{
+    text-align: center;
+}
+
+.display
+{
+    text-align: center;
+}
+
+.display > a {
+    margin: 2%;
+}
+
+h3
+{
+    margin-left: 10px;
+}

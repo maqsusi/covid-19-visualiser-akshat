@@ -1,0 +1,41 @@
+<h3>Showing Total Nationwide COVID-19 Data</h3>
+<div class="container">
+    <div class="totalCases">
+        <h4>{{totalConfirmed}}</h4>
+        <p class="number">Total Cases</p>
+    </div>
+
+    <div class="totalActive">
+        <h4>{{totalActive}}</h4>
+        <p class="number">Active Cases</p>
+    </div>
+
+    <div class="totalRecovered">
+        <h4>{{totalRecovered}}</h4>
+        <p class="number">Recovered Cases</p>
+    </div>
+
+    <div class="totalDeceased">
+        <h4>{{totalDeceased}}</h4>
+        <p class="number">Total Deaths</p>
+    </div>
+</div>
+
+<div class="chartHolder">
+
+    <router-outlet></router-outlet>
+</div>
+<br><br>
+<div class = 'display'>
+<a routerLink = "/bar"> 
+    <button class="btn btn-primary">Bar Chart</button>
+</a>
+<a routerLink = '/pie'>
+    <button class="btn btn-primary">Pie Chart</button></a>
+<a routerLink = '/doughnut'>
+    <button class="btn btn-primary">Doughnut Chart</button></a>
+<a routerLink = '/line'>
+    <button class="btn btn-primary">Line Chart</button>
+</a>
+</div>
+

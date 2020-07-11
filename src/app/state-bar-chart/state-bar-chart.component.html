@@ -1,0 +1,45 @@
+<div class="container">
+    <h3>Showing State Details for {{api.states[currentState]}}</h3>    
+
+    <div class="totalActive">
+        <h4>{{active}}</h4>
+        <p class="number">Active Cases</p>
+    </div>
+
+    <div class="totalRecovered">
+        <h4>{{recovered}}</h4>
+        <p class="number">Recovered Cases</p>
+    </div>
+
+    <div class="totalDeceased">
+        <h4>{{deceased}}</h4>
+        <p class="number">Total Deaths</p>
+    </div>
+</div>
+<hr>
+<div class="tableContainer">
+    <table class = 'table table-striped'>
+        <tr>
+            <th>District / Type of Patient</th>
+            <th>Total Cases</th>
+            <th>Recovered</th>
+            <th>Deceased</th>
+        </tr>
+        
+        <tr *ngFor = "let d of stateDists">
+            <td>
+                {{d.dist}}
+            </td>
+            <td>
+                {{d.conf}}
+            </td>
+            <td>
+                {{d.rec}}
+            </td>
+            <td>
+                {{d.dec}}
+            </td>
+        </tr>
+    </table>
+
+</div>

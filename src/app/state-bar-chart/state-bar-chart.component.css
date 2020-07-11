@@ -1,0 +1,28 @@
+.totalDeceased
+{
+    width: 20% !important;
+    display: inline-block;
+    background-color: red;
+    margin: 10px;
+}
+
+.totalActive
+{
+    width: 20% !important;
+    display: inline-block;
+    background-color: yellow;
+    margin: 10px;
+}
+
+.totalRecovered
+{
+    width: 20% !important;
+    display: inline-block;
+    background-color: green;
+    margin: 10px;
+}
+
+.container
+{
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+<h4>New User? Register below.</h4>
+
+<div class="registerForm form-group">
+    <form [formGroup] = userForm (submit) = "registerUser()">
+        <label for = 'username'>Enter a Username:   </label><br>
+        <input type="text" name = 'username' formControlName = 'username'>
+        <br><br>
+        <label for = 'password'>Enter a Password:   </label><br>
+        <input type="password" name = 'password' formControlName = 'password'>
+        <br><br>
+        <input type="submit" value="Register" class="btn-primary" routerLink = "login">
+
+    </form>
+</div>

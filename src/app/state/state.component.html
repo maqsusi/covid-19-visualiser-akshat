@@ -1,0 +1,20 @@
+<h2>Showing Statewise COVID-19 Data</h2>
+<div class = statetable>
+<table class="table table-striped">
+    <tr>
+        <th>State/Territory</th>
+        <th>Confirmed Cases</th>
+        <th>Active Cases</th>
+        <th>Recovered Cases</th>
+        <th>Deceased</th>
+    </tr>
+    <tr *ngFor = "let state of api.states; let i = index">
+        <td [routerLink] = "['state/', i]">{{i+1}}. {{api.states[i]}}</td>
+        <td [routerLink] = "['state/', i]">{{api.stateTotal[i]}}</td>
+        <td [routerLink] = "['state/', i]">{{api.stateActive[i]}}</td>
+        <td [routerLink] = "['state/', i]">{{api.stateRecovered[i]}}</td>
+        <td [routerLink] = "['state/', i]">{{api.stateDeceased[i]}}</td>
+    </tr>
+
+</table>
+</div>
